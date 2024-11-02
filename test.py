@@ -5,6 +5,26 @@ import argparse
 import sys
 from datetime import datetime
 
+from utils import json_to_dataframe, drop_columns, feature_engineer, normalise, get_drop_identifiers, feature_selection
+
+def load_data(data):
+    try:
+        df = json_to_dataframe(data)
+        df1 = drop_columns(df)
+        df2 = feature_engineer(df1)
+        df3 = normalise(df2)
+        df4 = normalise(df3)
+        identifiers, df5 = get_drop_identifiers(df4)
+        df6 = feature_selection(df5)
+
+        # Reshape data for CNN compatibility
+        data_reshaped = np.expand_dims(df6.values, axis=2)
+
+        return identifiers, data_reshaped
+    except Exception as e:
+        print(f"Error loading or preparing data: {e}")
+        sys.exit(1)
+
 def load_model(model_path):
     try:
         model = tf.keras.models.load_model(model_path)
@@ -12,26 +32,6 @@ def load_model(model_path):
         return model
     except Exception as e:
         print(f"Error loading model: {e}")
-        sys.exit(1)
-
-def load_data(data_path):
-    try:
-        data = pd.read_csv(data_path)
-        print("Data preview:")
-        print(data.head())
-        
-        # Extract identifiers
-        identifiers = data[['transcript_id', 'transcript_position']]
-        
-        # Drop identifier columns for model input
-        new_data = data.drop(columns=['transcript_id', 'transcript_position'], errors='ignore')
-        
-        # Reshape data for CNN compatibility
-        data_reshaped = np.expand_dims(new_data.values, axis=2)
-        
-        return identifiers, data_reshaped
-    except Exception as e:
-        print(f"Error loading or preparing data: {e}")
         sys.exit(1)
 
 def main(model_path, data_path, n, output_filename):
