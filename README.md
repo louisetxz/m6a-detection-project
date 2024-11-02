@@ -42,7 +42,7 @@ python test.py
 The testing script contains the following command-line arguments:
 * --model_path (str): Path to the trained model file. Default is cnn_selected.keras.
 
-* --data_path (str): Path to the test dataset file. Default is /data/test_data.csv.
+* --data_path (str): Path to the test dataset file which must be in json format. Default is /data/test_data.json.
 
 * --n (int): Number of prediction rows to print to the console. Default is 10.
 
