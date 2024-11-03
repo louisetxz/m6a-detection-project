@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: m6a-detection-project
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Louise Tan
+  - given-names: Khine Ezali
+  - given-names: Sean Lim
+  - given-names: Rachel Sitoh
+repository-code: >-
+  https://github.com/louisetxz/m6a-detection-project/tree/main
+abstract: >
+  This project aims to address these challenges by
+  developing a robust machine-learning classifier for
+  identifying m6A modifications in RNA-Seq data,
+  specifically focusing on human cell lines from the SG-NEx
+  Project (2021). This is a CNN model that have been trained
+  using various preprocessing techniques.
+license: MIT
+version: '1'
+date-released: '2024-11-06'
