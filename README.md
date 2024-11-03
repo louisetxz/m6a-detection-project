@@ -102,4 +102,4 @@ If you use this mdoel in your research, please cite this repository:
 Or cite Louise Tan, Khine Ezali, Sean Lim, & Rachel Sitoh. (2024). m6a-detection-project (Version 1) [CNN Model]. https://github.com/louisetxz/m6a-detection-project/tree/main
 
 # License
-License information.
+m6Anet is licensed under the terms of the MIT license.
