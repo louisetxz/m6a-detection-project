@@ -10,7 +10,7 @@ authors:
   - given-names: Sean Lim
   - given-names: Rachel Sitoh
 repository-code: >-
-  https://github.com/louisetxz/m6a-detection-project/tree/main
+  https://github.com/louisetxz/m6a-detection-project
 abstract: >
   This project aims to address these challenges by
   developing a robust machine-learning classifier for

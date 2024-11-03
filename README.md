@@ -125,7 +125,7 @@ If you use this mdoel in your research, please cite this repository:
     license = {MIT},
     month = nov,
     title = {{m6a-detection-project}},
-    url = {https://github.com/louisetxz/m6a-detection-project/tree/main},
+    url = {https://github.com/louisetxz/m6a-detection-project},
     version = {1},
     year = {2024}
 }
