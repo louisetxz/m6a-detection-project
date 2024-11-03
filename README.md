@@ -26,11 +26,14 @@ This project aims to address these challenges by developing a robust machine-lea
 ```bash
 git clone git@github.com:louisetxz/m6a-detection-project.git
 ```
+3. Change directory into our project.
+```
+cd m6a-detection-project
+```
 
 ## Installing dependencies
-To install Python and package manager PIP, run
+To install package manager PIP, run
 ```bash
-sudo apt install python3
 sudo apt install python3-pip
 ```
 To install dependencies, run
