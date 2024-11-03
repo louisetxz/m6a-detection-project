@@ -42,7 +42,7 @@ pip install -r requirements.txt
 Place test data under /data/
 To generate predictions on the available test data, run:
 ```bash
-python test.py
+python3 test.py
 ```
 
 The testing script contains the following command-line arguments:
@@ -56,7 +56,7 @@ The testing script contains the following command-line arguments:
 
 To generate predictions with your own command-line arguments, run:
 ```bash
-python test.py --model_path /path/to/model --data_path /path/to/data --n 5 --output_filename model_output_datetime.csv
+python3 test.py --model_path /path/to/model --data_path /path/to/data --n 5 --output_filename model_output_datetime.csv
 ```
 
 ## Intepretation of outputs
