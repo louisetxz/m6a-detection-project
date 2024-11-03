@@ -70,10 +70,6 @@ To install package manager PIP, run
 ```bash
 sudo apt install python3-pip
 ```
-Now, cd into our github folder
-```bash
-cd m6a-detection-project
-```
 To install dependencies, run
 ```bash
 pip install -r requirements.txt
