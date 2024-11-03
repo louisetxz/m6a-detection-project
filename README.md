@@ -21,7 +21,34 @@ This project aims to address these challenges by developing a robust machine-lea
 2. Access your Ubuntu instance.
 
 ## Cloning the repository
-1. Add your SSH agent into the Ubuntu instance or create a new one.
+1. Add your SSH key into the Ubuntu instance or create a new one.
+To create a new SSH key, follow these steps:
+    1. Create a new key.
+    ```bash
+    ssh-keygen -t rsa -b 4096 -C your-email@domain (e.g. nus email@nus.edu)
+    ```
+    This creates a new SSH key, using the provided email as a label.
+    When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location. Please note that if you created SSH keys previously, ssh-keygen may ask you to rewrite another key, in which case we recommend creating a custom-named SSH key. To do so, type the default file location and replace id_ALGORITHM with your custom key name.
+    2. At the prompt, type a secure passphrase or empty for none.
+    3. Start the ssh-agent.
+    ```bash
+    eval "$(ssh-agent -s)"
+    ```
+    4. Add the ssh-agent.
+    ```
+    ssh-add ~/.ssh/id_rsa
+    ```
+    5. Read the content of your SSH public key file.
+    ```bash
+    cat ~/.ssh/id_rsa.pub 
+    ```
+    Copy the output of this command to be added into GitHub.
+    6. To add the SSH key to GitHub, login to your GitHub >> Go to Settings >> "SSH and GPG keys" >> New SSH Key
+    7. Test the connection,
+    ```bash
+    ssh -T git@github.com
+    ```
+
 2. Clone the repository. To clone our repository using SSH, run
 ```bash
 git clone git@github.com:louisetxz/m6a-detection-project.git
