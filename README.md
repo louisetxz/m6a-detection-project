@@ -42,11 +42,15 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Place test data under /data/
-To generate predictions on the available test data, run:
+There are two ways you can generate predictions using our model:
+
+- To generate predictions on the available test data, run:
 ```bash
 python3 test.py
 ```
+
+- To generate predictions with your own command-line arguments:
+1. Place test data under /data/ 
 
 The testing script contains the following command-line arguments:
 * --model_path (str): Path to the trained model file. Default is cnn_selected.keras.
@@ -57,7 +61,7 @@ The testing script contains the following command-line arguments:
 
 * --output_filename (str): File name for the output predictions. This will save the results to the specified file in the /output directory. Default is predictions.csv.
 
-To generate predictions with your own command-line arguments, run:
+2. Run:
 ```bash
 python3 test.py --model_path /path/to/model --data_path /path/to/data --n 5 --output_filename model_output_datetime.csv
 ```
