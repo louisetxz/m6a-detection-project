@@ -21,12 +21,18 @@ This project aims to address these challenges by developing a robust machine-lea
 2. Access your Ubuntu instance.
 
 ## Cloning the repository
-To clone our repository using SSH, run
+1. Add your SSH agent into the Ubuntu instance or create a new one.
+2. Clone the repository. To clone our repository using SSH, run
 ```bash
 git clone git@github.com:louisetxz/m6a-detection-project.git
 ```
 
 ## Installing dependencies
+To install Python and package manager PIP, run
+```bash
+sudo apt install python3
+sudo apt install python3-pip
+```
 To install dependencies, run
 ```bash
 pip install -r requirements.txt
@@ -50,7 +56,7 @@ The testing script contains the following command-line arguments:
 
 To generate predictions with your own command-line arguments, run:
 ```bash
-python test.py --model_path /path/to/model --data_path /path/to/data --n 5 --output_filename filename.csv
+python test.py --model_path /path/to/model --data_path /path/to/data --n 5 --output_filename model_output_datetime.csv
 ```
 
 ## Intepretation of outputs
