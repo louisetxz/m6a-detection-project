@@ -61,7 +61,7 @@ def main(model_path, data_path, n, output_filename):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run CNN model on test data to get m6a modification probabilities")
     parser.add_argument("--model_path", type=str, default="cnn_selected.keras", help="Path to the trained model file")
-    parser.add_argument("--data_path", type=str, default="/data/test_data.json", help="Path to the test dataset with identifiers")
+    parser.add_argument("--data_path", type=str, default="data/test_data.json", help="Path to the test dataset with identifiers")
     parser.add_argument("--n", type=int, default=10, help="Number of rows of predictions to print in console")
     parser.add_argument("--output_filename", type=str, help="File name of the model predictions output")
     args = parser.parse_args()
