@@ -105,7 +105,7 @@ ls
 ```
 3. Display the predictions in the terminal by specifying the appropriate filename (e.g., model_output_datetime.csv):
 ```bash
-cat model_output_datetime.csv #Replace with your desired file name
+cat model_output_datetime.csv # Replace with the correct output file name
 ```
 
 The output file will the following three columns:
