@@ -43,6 +43,7 @@ To install dependencies, run
 ```bash
 pip install -r requirements.txt
 ```
+Note: These dependencies are required only for the testing file, `test.py`.
 
 ## Usage
 There are two ways you can generate predictions using our model:
