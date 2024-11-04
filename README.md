@@ -117,7 +117,7 @@ The output file will the following three columns:
 # Citing
 If you use this model in your research, please cite this repository:
 ```
-@misc{Louise_Tan__Xuan_Zhi_and_Khine_Ezali_and_Lim_Shih_Ler_Sean_and_Sitoh_Ying_Ting_Rachel_m6a-detection-project_2024,
+@misc{Louise_Tan_Xuan_Zhi_and_Khine_Ezali_and_Lim_Shih_Ler_Sean_and_Sitoh_Ying_Ting_Rachel_m6a-detection-project_2024,
     author = {Louise Tan Xuan Zhi and Khine Ezali and Lim Shih Ler Sean and Sitoh Ying Ting Rachel},
     license = {MIT},
     month = nov,
