@@ -1,6 +1,7 @@
 import tensorflow as tf
 import pandas as pd
 import numpy as np
+import keras
 import argparse
 import sys
 from datetime import datetime
@@ -26,7 +27,7 @@ def load_data(data):
 
 def load_model(model_path):
     try:
-        model = tf.keras.models.load_model(model_path)
+        model = keras.models.load_model(model_path)
         print(model.summary())
         return model
     except Exception as e:
@@ -60,7 +61,7 @@ def main(model_path, data_path, n, output_filename):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run CNN model on test data to get m6a modification probabilities")
-    parser.add_argument("--model_path", type=str, default="cnn_selected.keras", help="Path to the trained model file")
+    parser.add_argument("--model_path", type=str, default="cnn_selected.h5", help="Path to the trained model file")
     parser.add_argument("--data_path", type=str, default="data/test_data.json", help="Path to the test dataset with identifiers")
     parser.add_argument("--n", type=int, default=10, help="Number of rows of predictions to print in console")
     parser.add_argument("--output_filename", type=str, help="File name of the model predictions output")
