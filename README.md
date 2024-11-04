@@ -53,7 +53,7 @@ python3 test.py
 ```
 
 2. To generate predictions with your own command-line arguments:
-    1. Place test data under data/
+    1. Place test data under data/. The data should follow the format of the direct RNA-Seq data as in the SG-NEx project.
 
     2. Run:
     ```bash
@@ -67,7 +67,7 @@ python3 test.py
 
     * --n (int): Number of prediction rows to print to the console. Default is 10.
 
-    * --output_filename (str): File name for the output predictions. This will save the results to the specified file in the /output directory. Default is model_output_datetime.csv.
+    * --output_filename (str): File name for the output predictions. This will save the results to the specified file in the /output directory. Default is model_output_`datetime`.csv, where `datetime` is captured from the server where you are running the code. In an Ubuntu instance, it will follow the UTC timezone.
 
 ## Intepretation of outputs
 The output file `model_output_datetime.csv` will be under /output/. It contains the probability of modification at each individual position for each transcript. 
@@ -99,7 +99,7 @@ If you use this mdoel in your research, please cite this repository:
     year = {2024}
 }
 ```
-Or cite Louise Tan, Khine Ezali, Sean Lim, & Rachel Sitoh. (2024). m6a-detection-project (Version 1) [CNN Model]. https://github.com/louisetxz/m6a-detection-project/tree/main
+Or cite Louise Tan, Khine Ezali, Sean Lim, & Rachel Sitoh. (2024). m6a-detection-project (Version 1) [CNN Model]. https://github.com/louisetxz/m6a-detection-project
 
 # License
 m6Anet is licensed under the terms of the MIT license.
