@@ -2,6 +2,7 @@
 
 # Table of Contents
 - **[Overview](#overview)**<br>
+- **[Repository-Structure](#repository-structure)**<br>
 - **[Quick Start Guide](#quick-start-guide)**<br>
     - **[Ubuntu setup](#ubuntu-setup)**<br>
     - **[Cloning the repository](#cloning-the-repository)**<br>
@@ -13,6 +14,27 @@
 
 # Overview
 This project aims to address challenges that exist in developing a robust machine-learning classifier for identifying m6A modifications in RNA-Seq data, specifically focusing on cell lines found in the SG-NEx Project (2021). By enhancing our ability to detect m6A modifications, we hope to contribute to a deeper understanding of identification of m6A and its potential as a target for therapeutic intervention.
+
+# Repository Structure
+This section provides an overview of the main folders and files in this repository.
+```bash
+m6a-detection-project/
+├── data/                         # Folder containing RNA-Seq data files
+│   └── test_data.json            # Test data used for running model tests
+├── output/                       # Folder where model prediction files are saved
+│   └── model_output_datetime.csv # Example output file with prediction results
+│
+├── test.py                       # Script for evaluating the model on test data
+├── utils.py                      # Script containing all relevant functions used in the testing script
+├── train.ipynb                   # Notebook for training and tuning the model
+├── cnn_selected.h5               # Final trained model file
+│
+├── CITATION.cff                  # Citation for this repository
+├── LICENSE                       # License for this repository
+├── requirements.txt              # List of required packages and dependencies
+├── README.md                     # Project overview and setup instructions (this file)
+└── .gitignore                    # Specifies files and folders to ignore in version control
+```
 
 # Quick Start Guide
 
