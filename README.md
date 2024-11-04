@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ```
 Note: These dependencies are required only for the testing file, `test.py`.
 
-## Usage
+# Usage
 There are two ways you can generate predictions using our model:
 
 - To generate predictions on the **preloaded test data** available in the repository, run:
@@ -92,7 +92,7 @@ python3 test.py
 
     * --output_filename (str): File name for the output predictions. This will save the results to the specified file in the /output folder. Default is model_output_`datetime`.csv, where `datetime` is captured from the server where you are running the code. In an Ubuntu instance, it will follow the UTC timezone.
 
-## Interpretation of outputs
+# Interpretation of outputs
 The predictions will be saved as a **csv** file (Default name: `model_output_datetime.csv`) which can be found under the /output folder. It contains the results of modification at each individual position for each transcript. To see the predictions, follow these steps:
 
 1. Navigate to the output directory to locate the file with the prediction results:
