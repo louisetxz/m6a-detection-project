@@ -13,7 +13,7 @@
 - **[License](#license)**<br>
 
 # Overview
-This project aims to address challenges that exist in developing a robust machine-learning classifier for identifying m6A modifications in RNA-Seq data, specifically focusing on cell lines found in the SG-NEx Project (2021). By enhancing our ability to detect m6A modifications, we hope to contribute to a deeper understanding of identification of m6A and its potential as a target for therapeutic intervention.
+This project aims to address challenges that exist in developing a robust machine-learning classifier by developing a CNN model for identifying m6A modifications in RNA-Seq data, specifically focusing on cell lines found in the SG-NEx Project (2021). By enhancing our ability to detect m6A modifications, we hope to contribute to a deeper understanding of identification of m6A and its potential as a target for therapeutic intervention.
 
 # Repository Structure
 This section provides an overview of the main folders and files in this repository.
@@ -27,6 +27,7 @@ m6a-detection-project/
 ├── test.py                       # Script for evaluating the model on test data
 ├── utils.py                      # Script containing all relevant functions used in the testing script
 ├── train.ipynb                   # Notebook for training and tuning the model
+├── final_task2.ipynb             # Notebook for testing model to predict m6A sites in all SG-NEx direct RNA-Seq data sets
 ├── cnn_selected.h5               # Final trained model file
 │
 ├── CITATION.cff                  # Citation for this repository
