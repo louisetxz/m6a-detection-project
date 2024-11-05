@@ -7,19 +7,21 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - given-names: Louise Tan
+  - given-names: Louise Tan Xuan Zhi
   - given-names: Khine Ezali
-  - given-names: Sean Lim
-  - given-names: Rachel Sitoh
+  - given-names: Lim Shih Ler Sean
+  - given-names: Sitoh Ying Ting Rachel
 repository-code: >-
   https://github.com/louisetxz/m6a-detection-project
 abstract: >
-  This project aims to address these challenges by
-  developing a robust machine-learning classifier for
-  identifying m6A modifications in RNA-Seq data,
-  specifically focusing on human cell lines from the SG-NEx
-  Project (2021). This is a CNN model that have been trained
-  using various preprocessing techniques.
+  This project aims to address challenges that exist in 
+  developing a robust machine-learning classifier by 
+  developing a CNN model for identifying m6A modifications 
+  in RNA-Seq data, specifically focusing on cell lines found 
+  in the SG-NEx Project (2021). By enhancing our ability to 
+  detect m6A modifications, we hope to contribute to a deeper
+  understanding of identification of m6A and its potential 
+  as a target for therapeutic intervention.
 license: MIT
 version: '1'
 date-released: '2024-11-06'
